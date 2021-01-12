@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/recipe-card-maker/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/recipe-card-maker/static/js/main.9bdb280b.chunk.js",
+    "main.js.map": "/recipe-card-maker/static/js/main.9bdb280b.chunk.js.map",
+    "runtime-main.js": "/recipe-card-maker/static/js/runtime-main.6170d2fa.js",
+    "runtime-main.js.map": "/recipe-card-maker/static/js/runtime-main.6170d2fa.js.map",
+    "static/js/2.66779c2d.chunk.js": "/recipe-card-maker/static/js/2.66779c2d.chunk.js",
+    "static/js/2.66779c2d.chunk.js.map": "/recipe-card-maker/static/js/2.66779c2d.chunk.js.map",
+    "static/js/3.baf13438.chunk.js": "/recipe-card-maker/static/js/3.baf13438.chunk.js",
+    "static/js/3.baf13438.chunk.js.map": "/recipe-card-maker/static/js/3.baf13438.chunk.js.map",
+    "index.html": "/recipe-card-maker/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/recipe-card-maker/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.66779c2d.chunk.js.LICENSE.txt": "/recipe-card-maker/static/js/2.66779c2d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6170d2fa.js",
+    "static/js/2.66779c2d.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.9bdb280b.chunk.js"
+  ]
+}
