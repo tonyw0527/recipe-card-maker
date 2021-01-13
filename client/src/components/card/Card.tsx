@@ -3,66 +3,9 @@ import { useRecipeStore } from "../../stores/RecipeStore";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  color: #dddddd;
   background: #222831;
 
-  @font-face {
-    font-family: "yg-jalnan";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "NanumBarunGothic";
-    font-style: normal;
-    font-weight: 400;
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
-        format("embedded-opentype"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
-        format("woff"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
-        format("truetype");
-  }
-
-  @font-face {
-    font-family: "NanumBarunGothic";
-    font-style: normal;
-    font-weight: 700;
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
-        format("embedded-opentype"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
-        format("woff"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
-        format("truetype");
-  }
-
-  @font-face {
-    font-family: "NanumBarunGothic";
-    font-style: normal;
-    font-weight: 300;
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
-    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
-        format("embedded-opentype"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
-        format("woff"),
-      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
-        format("truetype");
-  }
-
-  .nanumbarungothic * {
-    font-family: "NanumBarunGothic", sans-serif;
-  }
-
+  color: #dddddd;
   font-family: "NanumBarunGothic";
 `;
 
@@ -72,11 +15,11 @@ const CardBox = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 300px;
+  width: 350px;
   height: 100%;
 
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
 
   background: #222831;
 `;
@@ -91,7 +34,7 @@ const CardSubTitle = styled.span`
   font-size: 1.1rem;
   text-align: start;
 
-  color: white;
+  color: #fad586;
 `;
 const CardContentBox = styled.div`
   margin-bottom: 1rem;
@@ -99,6 +42,7 @@ const CardContentBox = styled.div`
 const CardContentName = styled.span`
   display: block;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
 
   font-family: "yg-jalnan";
   text-align: center;
@@ -108,8 +52,10 @@ const CardContentName = styled.span`
   color: white;
 `;
 const CardContentImg = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
 
   object-fit: cover;
 `;
@@ -118,6 +64,8 @@ const CardBasicBox = styled.div`
   width: 100%;
   margin-bottom: 1rem;
   padding: 0 0.6rem;
+  word-break: keep-all;
+  line-height: 1.5rem;
 `;
 
 const CardIngredientsBox = styled(CardBasicBox)``;
@@ -138,25 +86,7 @@ const Li = styled.li`
 `;
 const HowtoSpan = styled.span`
   font-weight: 700;
-`;
-
-const CardControlBox = styled.div`
-  display: flex;
-  justify-content: center;
-
-  width: 100%;
-  padding: 0.5rem;
-`;
-const CardControlBtn = styled.button`
-  border: 0;
-  background: none;
-
-  color: #dddddd;
   font-size: 1.1rem;
-
-  &: hover {
-    cursor: pointer;
-  }
 `;
 
 export default function Card() {
@@ -166,7 +96,7 @@ export default function Card() {
     return recipe.howto.map((item, index) => {
       return (
         <Li>
-          <HowtoSpan>{index + 1}</HowtoSpan> {item}
+          <HowtoSpan>{index + 1} </HowtoSpan> {item}
         </Li>
       );
     });

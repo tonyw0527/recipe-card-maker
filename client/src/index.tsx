@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
+import { GlobalStyle } from "./styles";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RecipeProvider } from "./stores/RecipeStore";
@@ -8,6 +9,7 @@ import { RecipeProvider } from "./stores/RecipeStore";
 ReactDOM.render(
   <React.StrictMode>
     <RecipeProvider>
+      <GlobalStyle />
       <App />
     </RecipeProvider>
   </React.StrictMode>,

@@ -4,12 +4,6 @@ import html2canvas from "html2canvas";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
   margin: 1rem;
   width: 300px;
 `;
@@ -38,6 +32,16 @@ const Ol = styled.ol`
 `;
 const Li = styled.li`
   margin-bottom: 0.5rem;
+`;
+
+const Button = styled.button`
+  padding: 0.5rem;
+  background: none;
+  border: 0;
+
+  &: hover {
+    cursor: pointer;
+  }
 `;
 
 type HowtoItemProps = {
@@ -153,7 +157,7 @@ export default function Maker() {
             recipeStore.setDesc(e.target.value);
           }}
         />
-        <button
+        <Button
           type="button"
           onClick={() => {
             window.scrollTo(0, 0);
@@ -171,7 +175,7 @@ export default function Maker() {
           }}
         >
           레시피카드 저장
-        </button>
+        </Button>
         <a href="#" id="target" style={{ display: "none" }}></a>
       </Form>
     </Wrapper>

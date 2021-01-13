@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Card from "./components/card/Card";
 import Maker from "./components/maker/Maker";
 import styled from "styled-components";
