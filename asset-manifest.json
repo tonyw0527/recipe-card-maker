@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/recipe-card-maker/static/js/main.44e715ba.chunk.js",
-    "main.js.map": "/recipe-card-maker/static/js/main.44e715ba.chunk.js.map",
+    "main.js": "/recipe-card-maker/static/js/main.73bd2aef.chunk.js",
+    "main.js.map": "/recipe-card-maker/static/js/main.73bd2aef.chunk.js.map",
     "runtime-main.js": "/recipe-card-maker/static/js/runtime-main.6cb1a344.js",
     "runtime-main.js.map": "/recipe-card-maker/static/js/runtime-main.6cb1a344.js.map",
     "static/js/2.b18b27ce.chunk.js": "/recipe-card-maker/static/js/2.b18b27ce.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.6cb1a344.js",
     "static/js/2.b18b27ce.chunk.js",
-    "static/js/main.44e715ba.chunk.js"
+    "static/js/main.73bd2aef.chunk.js"
   ]
 }
