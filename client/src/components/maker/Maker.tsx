@@ -92,7 +92,7 @@ export default function Maker() {
         <Input
           type="text"
           placeholder="요리명"
-          maxLength={11}
+          maxLength={8}
           value={recipeStore?.name}
           onChange={(e) => {
             recipeStore.setName(e.target.value);

@@ -41,7 +41,6 @@ const CardContentBox = styled.div`
 `;
 const CardContentName = styled.span`
   display: block;
-  margin-bottom: 0.5rem;
   padding: 0.5rem;
 
   font-family: "yg-jalnan";
@@ -105,8 +104,8 @@ export default function Card() {
   return (
     <Wrapper>
       <CardBox id="capture">
+        <CardContentName>{recipe.name}</CardContentName>
         <CardContentBox>
-          <CardContentName>{recipe.name}</CardContentName>
           <CardContentImg id="food_img" src={recipe.img} alt={recipe.name} />
         </CardContentBox>
 
